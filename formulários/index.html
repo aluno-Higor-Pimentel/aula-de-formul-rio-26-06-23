@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <!-- <form> -> Estrutura base de um formulário HTML -->
+    <!-- <input type="text"> -> Define um campo no formulário -->
+    <!-- <button> -> Botão -->
+    <form>
+        Nome:
+        <input type="text"> <br>
+        E-mail:
+        <input type="email" placeholder="Hpiment908@.gmail.com"> <br>
+        Senha:
+        <input type="password"> <br>
+        Idade:
+        <input type="number"> <br>
+        Horário de registro:
+        <input type="time" value="15:00" disabled name="Horário"> <br>
+        Data de nascimento:
+        <input type="date"> <br>
+        telefone:
+        <input type="tel"> <br>
+        URL da foto:
+        <input type="url"> <br> 
+        Frente do RG:
+        <input type="file" accept=".png, .jpg, .pdf" multiple> <br>
+        Escolha sua cor favorita:
+        <input type="color"> <br>
+        estado civil: <br>
+        Solteiro: <input type="radio" name="estado civil"><br>
+        Casado:<input type="radio" name="estado civil"> <br>
+        viuvó: <input type="radio" name="estado civil"> <br>
+        Aceito os termos de uso:
+        <input type="checkbox"> <br>
+        Nivel de inglês: 1 <input type="range" min="1" max="5" step="0.5"> 5 <br> 
+        Estado:
+        <select name="estado">
+            <option disabled selected> Selecione um estado</option>
+            <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    </select> <br>
+        Fale um pouco sobre você: <br>
+        <textarea cols="30" rows="3" placeholder="Digite sua descrição"></textarea> <br>
+        <input type="checkbox" role="switch">
+    <button>Enviar</button>
+     <!-- 
+            button -> Botão comum (auxlia na execução de um evento javascript)
+            submit -> Submete as informações do formulário
+            reset -> Limpar os campos de um formulário
+        -->
+        <button type="button">Não Faz Nada</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="button" value="Não Faz Nada">
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+<!-- 
+    placeholder -> Define um texto explicativo para o campo
+    name -> Indica uma identificação para a informação no envio do formulário
+    value -> Indica o valor do campo
+    disabled -> Habilita/Desabilita um campo
+    min -> Define um numero minimo para campos numericos
+    max -> Define um numero máximo para campos numericos
+    minLength -> Minimo de caracteres
+    maxLength -> Maximo de caracteres
+    pattern -> Define um padrão/modelo da informação
+    required -> Define um campo obrigatório
+-->
+    </form>
+</body>
+</html>
