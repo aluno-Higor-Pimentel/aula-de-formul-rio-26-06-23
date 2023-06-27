@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outras tags da página</title>
+</head>
+<body>
+    <h1>layout da página</h1>
+    <!-- method é responsável por informa como as informações devem ser enviadas pelo navegador
+    Get = envia pela url
+    Post envia pelo pacote de requisição (fica escondido)-->
+
+    <h2> cadastro de super heroi</h2>
+    <form action="" method="get"> <!-- referência pra onde vamos enviar essas informações-->
+        <fieldset> <!-- responsável por fazer uma divisão entres os elementos do formulário-->
+            <label for="Nome:">Nome:</label><!-- <label usado especificamente para nomes de campos-->
+                <input type="text" name="Nome" id="Nome" maxlength="100" required> <br><!-- required torna um campo obrigatório-->
+        
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" maxlength="200" required> <br>
+        
+                <label for="Poderes"> Poderes:</label>
+                <input type="text" name="Poderes" id="Poderes" maxlength="500" placeholder="Digite seus poderes separados por virgula" required> 
+        </fieldset>
+        <fieldset>
+            <label for="rua"> Rua:</label>
+            <input type="text" name="rua" id="rua" maxlength="150" required> <br>
+
+            <label for="numero"> número:</label>
+            <input type="text" name="numero" id="numero" maxlength="10" required> <br>
+
+            <label for="estado"> UF:</label>
+            <input type="text" name="estado" id="estado" maxlength="2" required> <br>
+            
+            <label for="cidade"> Cidade:</label>
+            <input type="text" name="cidade" id="cidade" maxlength="100" required>
+        </fieldset>
+            <button> Enviar</button>
+        </form>
+</body>
+</html>
